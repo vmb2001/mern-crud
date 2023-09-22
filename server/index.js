@@ -73,7 +73,7 @@ app.patch("/api/customers:id", (req, res) => {
     sqlUpdate,
     [email, first_name, last_name, ip, latitude, longitude, updated_at, id],
     (err, result) => {
-      if (err) console.log(`Error occured${err}`);
+      if (err) console.log(`Error occured ${err}`);
       else console.log(result);
     }
   );
